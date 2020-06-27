@@ -48,8 +48,8 @@ gsap.to('.box_1', {
       trigger:'.box_2',
       scrub: true,
       pin: true,
-      start: 'top top',
-      end: '+500%'
+      start: 'center center',
+      end: '+200%'
     }}
   )
 
