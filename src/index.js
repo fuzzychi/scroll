@@ -33,6 +33,16 @@ gsap.registerPlugin(ScrollTrigger);
 })
 */
 
+gsap.from('.start',
+{
+  scrollTrigger:{
+    trigger:'.start',
+    start: 'center bottom',
+    scrub:true,
+  },
+  opacity:0,
+  y:+100
+})
 
 gsap.to('.box_1', {
   scrollTrigger:{
@@ -49,12 +59,13 @@ gsap.to('.box_1', {
       scrub: true,
       pin: true,
       start: 'center center',
-      end: '+200%'
+      end: '+300%'
     }}
   )
 
   tl.from('.box_2',{
-    autoAlpha:0
+    autoAlpha:0,
+    y:200,
     })
 
     
